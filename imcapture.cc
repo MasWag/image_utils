@@ -24,7 +24,7 @@ int main(int argc,const char* argv[])
   const int width = attributes.width;
   const int height = attributes.height;
 
-  for (int i = 0;i < loop_times; i++) {
+  for (int i = 0; loop_times == 0 || i < loop_times; i++) {
     XImage* img = XGetImage(display, root, 0, 0 , width, height, AllPlanes, ZPixmap);
 
     printf ("%d %d %d\n",height,width, img->bits_per_pixel / 8);

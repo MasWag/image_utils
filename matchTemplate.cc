@@ -35,6 +35,7 @@ int main(int argc, const char *argv[])
     const auto centerComplete = max_pt + Point {pattern.cols/2,pattern.rows/2};
   
     printf ("%g %d %d\n",maxVal,centerComplete.x,centerComplete.y);
+    fflush(stdout);
   }
 
   return 0;
